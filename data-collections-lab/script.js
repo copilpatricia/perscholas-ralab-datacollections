@@ -44,6 +44,29 @@ console.table(cells);
 cellsContainer.push(cells[0], cells[1], cells[2], cells[3]);
 console.log(cellsContainer);
 
+// Another solution for Part 2 - something is wrong with the first one. If I try to add another column I can't see it.
+
+// const csv =
+//  "ID,Name,Occupation,Age\n42,Bruce,Knight,41\n57,Bob,Fry Cook,19\n63,Blaine,Quiz Master,58\n98,Bill,Doctor's Assistant,26\n";
+
+// let data = csv.split('\n');
+//for (let i = 0; i < data.length; i++){
+//  data[i] = data[i].split(',')
+//}
+
+// console.log(data);
+
+//let columns = data[0].length;
+//let arrNew = [];
+
+//for(let i = 0; i <= data.length-1; i++){
+//    let data1 = data[1]
+//    arrNew[1] = data1
+//}
+
+//console.log(arrNew)
+
+
 console.log("=============");
 
 // Part 3:  Transforming Data
@@ -58,7 +81,6 @@ let csvArray = [
 
 let csvNew = csvArray.flat();
 console.log(csvNew);
-
 
 //extract the keys
 let keys = csvNew.slice(0, 4);
